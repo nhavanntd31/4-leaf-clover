@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+       @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+      body {
+      background-color: bisque;
+      animation: fade-in 4s ease-in-out;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .container {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 5;
+      height: 400px;
+      width: 400px;
+    }
+
+    .leaf {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      width: 100px;
+    }
+
+    .leaf:before,
+    .leaf:after {
+      content: '';
+      position: absolute;
+      margin: auto;
+      background-color: #315C2B;
+      height: 80px;
+      width: 50px;
+      transform: rotate(-45deg);
+      border-radius: 50% 50% 0 0;
+    }
+
+    .leaf:after {
+      transform: rotate(45deg);
+      left: 23px;
+    }
+
+    .leaf:nth-child(2) {
+      top: 110px;
+      left: 45px;
+      transform: rotate(90deg);
+    }
+
+    .leaf:nth-child(3) {
+      transform: rotate(180deg);
+      top: 165px;
+      left: -55px;
+    }
+
+    .leaf:nth-child(4) {
+      transform: rotate(-90deg);
+      top: 55px;
+      left: -105px;
+    }
+    .letter {
+      position: absolute;
+      margin: auto;
+      bottom: -150px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: 'Kalam', cursive;
+      font-size: 24px;
+      color: black;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="letter">
+        The signals from the universe indicate that recently things haven't been going as you hoped. I'm sending these four-leaf clovers here to wish you good luck in the coming time. Cya!
+    </div>
+  </div>
+</body>
+</html>
